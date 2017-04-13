@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../common_css/normalize.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="../css_modules/modal.css">
+  <link rel="stylesheet" href="../responsive/responsive.css">
+  <title>KarDoc 자동차 수리업체 검색 서비스</title>
+</head>
+<body>
+  <!-- 전체 페이지 래퍼 -->
+  <div class="page_wrapper">
+    <!-- 헤더 -->
+    <header class="main_header">
+      <nav class="nav_top clearfix">
+        <h1 class="logo">
+          <a href="#">
+            <img src="./images/kardoc.png" alt="로고">
+          </a>
+        </h1>
+        <a class="my_page_btn" href="#" role="button">마이페이지</a>
+        <a class="register_company_btn" href="../register_company/register_company.html" role="button">입점신청</a>
+        <!-- max-width:640px -->
+        <a class="burger_bar" href="#">
+          <i class="fa fa-align-justify" aria-hidden="true"></i>
+          <ul class="mb_main_menu">
+            <li><a href="">마이페이지</a></li>
+            <li><a href="">입점신청</a></li>
+            <li><a href="">업체검색</a></li>
+            <li><a href="">추천업체</a></li>
+            <li><a href="">우수사례</a></li>
+            <li><a href="">차량관리 팁</a></li>
+            <li><a href="">CONTACT US</a></li>
+          </ul>
+        </a>
+      </nav>
+      <form class="search_region_form">
+        <p>언제 어디서든 믿고 수리하세요!</p>
+        <label for="search_bar"></label>
+        <input class="modal_btn" id="search_bar" type="text" name="검색바" placeholder="지역을 선택해주세요." readonly><button class="search_btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <nav class="gnb">
+        <ul class="main_menu">
+          <li><a href="#">업체 검색</a></li>
+          <li><a href="#">추천 업체</a></li>
+          <li><a href="#">우수 사례</a></li>
+          <li><a href="#">차량관리 팁</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 메인컨텐츠 영역 -->
+    <main class="main_container">
+      <!-- 섹션 대표공업사 나열 -->
+      <section class="section">
+        <div class="featured_shop">
+          <h2>Featured Shop</h2>
+          <ul class="shop_list">
+            <li>
+              <a href="#">
+                <div class="company_img">
+                  <img src="images/workshop.jpg" alt="공업사">
+                </div>
+                <div class="company_desc">
+                  <h3>company name</h3>
+                  <p>address</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="company_img">
+                  <img src="images/workshop.jpg" alt="공업사">
+                </div>
+                <div class="company_desc">
+                  <h3>company name</h3>
+                  <p>address</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="company_img">
+                  <img src="images/workshop.jpg" alt="공업사">
+                </div>
+                <div class="company_desc">
+                  <h3>company name</h3>
+                  <p>address</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper_pagination">
+            <span class="swiper_pagination_bullet bullet_active"></span>
+            <span class="swiper_pagination_bullet"></span>
+            <span class="swiper_pagination_bullet"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 수리 사례 -->
+      <section class="section">
+        <div class="after_repair">
+          <h2>Best Repair!</h2>
+          <ul class="after_repair_list">
+            <li>
+              <a href="#">
+                <p>repaired postscript</p>
+                <div class="dim_bg"></div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>repaired postscript</p>
+                <div class="dim_bg"></div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>repaired postscript</p>
+                <div class="dim_bg"></div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>repaired postscript</p>
+                <div class="dim_bg"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 차량관리 팁 -->
+      <section class="section">
+        <div class="management_tip">
+          <h2>Management Tip</h2>
+          <ul class="management_tip_list">
+            <li>
+              <a href="">
+                <p>Tip of car management</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Tip of car management</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Tip of car management</p> 
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Tip of car management</p> 
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Tip of car management</p> 
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Tip of car management</p> 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <h2>CONTACT US</h2>
+        <div class="contact">
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i> 4F, Geumwon building, Jamwon-dong 8-12, Seocho-gu, Seoul, South Korea</span>
+          <br>
+          <span><i class="fa fa-phone" aria-hidden="true"></i> 010-9263-6925</span>
+          <br>
+          <span><i class="fa fa-envelope" aria-hidden="true"></i> master@KarDoc.co.kr</span>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3851636901431!2d127.01801334134032!3d37.51660973080532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2b9887fd23eea45!2sGeum-won+building!5e0!3m2!1sko!2skr!4v1491481881624" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <ul class="footer_link">
+        <li><a href="">information</a></li>
+        <li><a href="">help</a></li>
+        <li><a href="">blog</a></li>
+        <li><a href="">copyright</a></li>
+      </ul>
+      <hr>
+      <p class="footer_copyright">ⓒ 2017 KarDoc. All rights reserved.</p>
+      <ul class="footer_sns_list">
+        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+  <!-- 모달 -->
+  <!--<div class="modal_dim">
+    <div class="modal_window">
+      <p>지역선택
+        <button class="modal_close_btn" type="button">X</button>
+      </p>
+      <ul class="region_list">
+        <li class="region"><a href="#">경기도</a></li>
+        <li class="region"><a href="#">인천광역시</a></li>
+        <li class="region"><a href="#">부산광역시</a></li>
+        <li class="region"><a href="#">부산광역시</a></li>
+        <li class="region"><a href="#">대전광역시</a></li>
+        <li class="region"><a href="#">대구광역시</a></li>
+        <li class="region"><a href="#">광주광역시</a></li>
+        <li class="region"><a href="#">울산광역시</a></li>
+        <li class="region"><a href="#">경상북도</a></li>
+        <li class="region"><a href="#">경상남도</a></li>
+        <li class="region"><a href="#">충청북도</a></li>
+        <li class="region"><a href="#">충청남도</a></li>
+        <li class="region"><a href="#">강원도</a></li>
+        <li class="region"><a href="#">전라북도</a></li>
+        <li class="region"><a href="#">제주</a></li>
+        <li class="region"><a href="#">전라남도</a></li>
+        <li class="region"><a href="#">세종시</a></li>
+      </ul>
+    </div>
+  </div>-->
+  <!--<script src="js/modal.js"></script>-->
+<script src="https://use.fontawesome.com/07ef278e7c.js"></script> 
+</body>
+</html>

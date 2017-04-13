@@ -1,0 +1,117 @@
+@media screen and (max-width: 640px) {
+
+  /*메인페이지 헤더*/
+  .main_header{
+    background-image: none;
+  }
+  .nav_top {
+    background: rgba(44, 62, 80, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .logo {
+    margin-left: 5%;
+    width: 5.5rem;  
+    padding: .5rem .5rem 0 .5rem;
+  }
+  .burger_bar {
+    display: block;
+  }
+  .search_region_form,
+  .gnb,
+  .my_page_btn,
+  .register_company_btn {
+    display: none;
+  }
+
+  /*메인 컨테이너*/
+  .shop_list,
+  .after_repair_list,
+  .management_tip_list,
+  .contact_wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*주요공업사 리스트*/
+  .featured_shop {
+    margin-top: 44px;
+    padding-bottom: .5rem;
+  }
+  .shop_list li {
+    width: 100%;
+  }
+  .shop_list li:nth-child(2),
+  .shop_list li:nth-child(3) {
+    display: none;
+  }
+  .swiper_pagination {
+    padding-bottom: .5rem;
+  }
+  .swiper_pagination_bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  /*수리사례*/
+  .dim_bg {
+    display: none;
+  }
+  .after_repair_list li:nth-child(1),
+  .after_repair_list li:nth-child(2),
+  .after_repair_list li:nth-child(3),
+  .after_repair_list li:nth-child(4) {
+    width: 100%;
+    margin-right: 0;
+  }
+  .after_repair_list li a {
+    padding-bottom: 30%;
+    margin-bottom: 2%;
+  }
+
+  /*차량 관리팁*/
+  .management_tip_list li {
+    width: 100%;
+  }
+  .management_tip_list li:nth-child(4),
+  .management_tip_list li:nth-child(5),
+  .management_tip_list li:nth-child(6) {
+    display: none;
+  }
+  .management_tip_list li a {
+    padding-bottom: 25%;
+    margin-bottom: 4%;
+  }
+  
+  /*컨택트*/
+  .map {
+    width: 100%;
+    height: 10rem;
+  }
+  .map iframe {
+    height: auto;
+  }
+  .contact span {
+    padding: .5rem;
+    font-size: 1rem;
+  }
+
+  /*푸터*/
+  .footer_link {
+    margin-top: -1rem;
+  }
+  .footer_link li {
+    width: 100%;
+  }
+  .footer_link li a {
+    padding: .5rem 0;
+    font-size: 1.2rem;
+  }
+  .footer_sns_list {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

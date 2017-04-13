@@ -1,0 +1,211 @@
+html {
+  font-size: 16px;
+}
+
+/*헤더 영역*/
+.main_header{
+  background-image: url(../images/k-033.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 로고 */
+.logo {
+  background: #ecf0f1;
+  height: 120px;
+  z-index: 100;
+  display: inline-block;
+  margin-left: 10%;
+  width: 8rem;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  top: -25px;
+  transition: all .5s;
+  padding: 0 1rem 1rem 1rem;
+}
+.logo:hover {
+  top: 0;
+  background: #ecf0f1;
+}
+.logo a {
+  width: 100%;
+  padding: 0.5rem;
+}
+.logo a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* 탑 네비게이션 */
+.nav_top {
+  position: relative;
+  z-index: 100;
+}
+
+/* 마이페이지, 입점신청 */
+.my_page_btn,
+.register_company_btn {
+  width: 5rem;
+  padding: .4rem 0;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 20px;
+  position: relative;
+}
+.my_page_btn:hover,
+.register_company_btn:hover {
+  color: #ecf0f1;
+  border-color: #ecf0f1;
+}
+/*마이페이지 버튼*/
+.my_page_btn {
+  margin-right: 10%;
+}
+/*입점신청 버튼*/
+.register_company_btn {
+  margin-right: .7rem;
+}
+/* 모바일 메뉴(max-width: 640px) */
+.burger_bar {
+  display: none;
+}
+.burger_bar .fa-align-justify{
+  display: block;
+  float: right;
+  margin-right: 5%;
+  margin-top: 4px;
+  color: #e0685c;
+  font-size: 2.5rem;
+  text-align: right;
+  position: relative;
+}
+.mb_main_menu {
+  display: none;
+  background: rgba(44, 62, 80, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 44px;
+}
+.mb_main_menu li a{
+  display: block;
+  width: 100%;
+  color: #ecf0f1;
+  padding: .5rem 0;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .1rem;
+}
+.mb_main_menu li a:hover {
+  background: #000;
+  color: #fff;
+}
+/*검색폼*/
+.search_region_form {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10rem 0 5rem 0;
+}
+.search_region_form p {
+  padding: 5rem 0 1rem 0;
+  color: #ecf0f1;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#search_bar {
+  text-align: center;
+  width: 70%;
+  height: 3rem;
+  padding-left: 2rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.search_btn {
+  width: 8%;
+  height: 3rem;
+  vertical-align: top;
+  background: #E74C3C;
+  color: #fff;
+  border: none;
+  font-size: 0.8rem;
+  border :1px solid #E74C3C;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+}
+.fa.fa-search {
+  font-size: 1.4rem;
+  color: #ecf0f1;
+}
+/* 메인 네비게이션 */
+.gnb {
+  position: relative;
+  padding: .5rem 0;
+  overflow: hidden;
+  z-index: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+}
+.gnb::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: content-box;
+    background-color: hsla(0, 0%, 100%, 0.1); 
+    box-shadow: 0 4px 10px #333;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    transform: scale(1.4);
+}
+
+.main_menu {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main_menu li {
+  width: 20%;
+  text-align: center;
+}
+.main_menu li a {
+  display: inline-block;
+  width: 60%;
+  padding: .5rem 0;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #ecf0f1;
+  font-size: .9rem;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+
+/* 호버 효과 */
+.main_menu li a::after,
+.my_page_btn::after,
+.register_company_btn::after {
+  content: '';
+  position: absolute;
+  transition: all .5s ease-in-out;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  background: #ecf0f1;
+}
+.main_menu li a:hover::after,
+.my_page_btn:hover::after,
+.register_company_btn:hover::after {
+  right: 0;
+  left: 0;
+}

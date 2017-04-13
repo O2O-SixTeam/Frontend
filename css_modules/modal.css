@@ -1,0 +1,95 @@
+/*모달창*/
+
+/*모달 윈도우 딤처리*/
+.modal_dim {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(32, 32, 32, 0.8);
+}
+/* 모달창 */
+.modal_window {
+  width: 24rem;
+  height: auto;
+  padding: .5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: rgba(44, 62, 80, 0.90);
+}
+
+/*모달창 닫기 버튼*/
+.modal_close_btn {
+  position: absolute;
+  right: -1.2rem;
+  top: -1.4rem;
+  display: inline-block;
+  padding: .4rem .6rem;
+  border: 1px solid #E74C3C;
+  border-radius: 50%;
+  background: #E74C3C;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal_close_btn:hover {
+  background: #e66456;
+  border: 1px solid #e66456;
+}
+
+/*모달창 내부(지역분류 카테고리)*/
+.modal_window p {
+  position: relative;
+  color: #fff;
+  padding: .5rem 0;
+}
+.modal_window span {
+  font-size: .8rem;
+  padding-left: .5rem;
+  color: #d6d6d6;
+}
+.region_list {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+}
+.region {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  width: 25%;
+  text-align: center;
+}
+.region:nth-child(4),
+.region:nth-child(8),
+.region:nth-child(12) {
+  border-right: none;
+}
+.region:nth-child(13),
+.region:nth-child(14) {
+  border-bottom: none;
+}
+.region a {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  text-decoration: none;
+  color: #ECF0F1;
+  background: rgba(44, 62, 80, 0.90);
+  display:block;
+  transition:all .5s ease-in-out;
+}
+
+.region a:focus {
+  background: #34a77b;
+  border-radius: 50%;
+}
